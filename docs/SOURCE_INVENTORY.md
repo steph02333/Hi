@@ -28,3 +28,8 @@
 3. Publish report PDF only after assessing privacy/licensing; avoid reproducing professor's email or protected standard attachments.
 4. Reproduce old metrics from checked-in data and check group leak safeguards.
 5. Each new batch gets versioned CSV and iteration entry — NEVER overwrite original dataset.
+
+
+## Windows working directory (added 2026-11-01)
+
+The project owner confirmed `D:\Users\TC FANG\Desktop\FYP sem2` as the local Windows root. See **[LOCAL_WINDOWS_FILE_MAP.md](LOCAL_WINDOWS_FILE_MAP.md)** for the complete handover map, paths confirmed by AEDT logs, historical archive names awaiting exact-path verification, PowerShell discovery commands, and the proposed next validation output folder. **This map is a locator, not a claim that these sources were uploaded to GitHub.**
