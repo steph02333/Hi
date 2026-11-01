@@ -38,3 +38,10 @@ Observed errors and limitations:
 Scientific conclusion; what remains unverified:
 Next step + owner:
 ```
+
+
+### 2026-11-01 — GitHub local Windows file-location handover
+**Objective:** make project state understandable to another agent after this chat ends.
+**Completed:** published `docs/LOCAL_WINDOWS_FILE_MAP.md`, based on user-confirmed Windows root `D:\Users\TC FANG\Desktop\FYP sem2` and prior AEDT logs. Confirmed successful 12-pair source directory `31_CA2_Q3D_MAXWELL_RAW`, historical Maxwell pilot `29_CA2_MAXWELL_CROSS_SOLVER`; tagged other source filenames as *to verify* rather than inventing paths.
+**Limitations:** no direct access to Windows D: filesystem; full raw source archives and full 261-case data are not automatically present in GitHub.
+**Next:** design a consolidated but scientifically separable mesh/charge/reference validation batch, output to a versioned folder, and update map with exact file paths and run results.
