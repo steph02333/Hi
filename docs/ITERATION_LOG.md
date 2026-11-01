@@ -63,3 +63,7 @@ Next step + owner:
 **Created locally:** `CA2_VALIDATION_BRIDGE_V2.zip` with Python A3 audit, comparison CSV, NOT_RUN candidate manifest, experimental `RUN_AEDT_MESH_REFINEMENT.py` and instructions. This script **has not been tested in AEDT**. It copies existing .aedt models and attempts 25%/35% mesh growth variants, not new physics/geometry.
 **Published GitHub:** `docs/A3_SOURCE_ALIGNED_REDO_2026-11-01.md` details exact baseline and planned checks.
 **No new simulations completed:** mesh convergence, substrate-reference matching and Gauss-law remain open. Next: run script locally, capture errors/profiles/matrices, reject mismatches, then log analysis.
+
+
+### 2026-11-01 — EXP-FIDELITY-GATE: DOE deferred pending numerical resolution
+**User scientific decision:** a revised mesh may invalidate treating existing 261 Q3D labels and future DOE labels as homogeneous. **Decision:** hold proposed 90-case DOE expansion until actual mesh/domain convergence is quantified and a geometry/rho-distributed matched old/new bridge is run. Full 261-case redo is conditional on demonstrated significant old/new shifts, not presumed. The original dataset and nine blind cases remain immutable. **Documentation:** `docs/DOE_SOLVER_FIDELITY_DECISION_GATE.md`. No new field solves have been reported for this decision.
