@@ -45,3 +45,13 @@ Next step + owner:
 **Completed:** published `docs/LOCAL_WINDOWS_FILE_MAP.md`, based on user-confirmed Windows root `D:\Users\TC FANG\Desktop\FYP sem2` and prior AEDT logs. Confirmed successful 12-pair source directory `31_CA2_Q3D_MAXWELL_RAW`, historical Maxwell pilot `29_CA2_MAXWELL_CROSS_SOLVER`; tagged other source filenames as *to verify* rather than inventing paths.
 **Limitations:** no direct access to Windows D: filesystem; full raw source archives and full 261-case data are not automatically present in GitHub.
 **Next:** design a consolidated but scientifically separable mesh/charge/reference validation batch, output to a versioned folder, and update map with exact file paths and run results.
+
+
+### 2026-11-01 — PHASE-A0: read-only verification and validation plan
+**Objective:** identify the most defensible next experiments before expanding DOE.  
+**Inputs:** existing `31_CA2_Q3D_MAXWELL_RAW.zip` (12 Q3D and 12 Maxwell matrices; original lossless comparison).  
+**Actions:** independently parsed raw matrix TXT files with a Python 3 standard-library reader, matched terminal labels, computed signal coefficient differences and matrix-QA rows.  
+**Observed:** 20 signal self comparisons mean **3.6915%** (max **5.1450%**), 8 mutual comparisons mean **2.1934%** (max **5.1008%**). Reproduces earlier reported aggregate values.  
+**Output:** offline `FYP_VALIDATION_V2_STARTER.zip` contains the reader, two generated baseline CSVs, and detailed batch plan; the ZIP is a local deliverable, not presently committed to GitHub. New GitHub document: `docs/VALIDATION_PHASE_A_PLAN.md`.  
+**Limitations:** no new AEDT solve, Gauss-law verification or substrate-root-cause proof performed in this iteration.  
+**Next:** verify original Q3D model setup and automate mesh/domain experiments with explicit solver failure handling; keep Gauss-law as separately testable field methodology before blending into unattended run.  
