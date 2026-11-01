@@ -55,3 +55,11 @@ Next step + owner:
 **Output:** offline `FYP_VALIDATION_V2_STARTER.zip` contains the reader, two generated baseline CSVs, and detailed batch plan; the ZIP is a local deliverable, not presently committed to GitHub. New GitHub document: `docs/VALIDATION_PHASE_A_PLAN.md`.  
 **Limitations:** no new AEDT solve, Gauss-law verification or substrate-root-cause proof performed in this iteration.  
 **Next:** verify original Q3D model setup and automate mesh/domain experiments with explicit solver failure handling; keep Gauss-law as separately testable field methodology before blending into unattended run.  
+
+
+### 2026-11-01 — EXP-A3-SOURCE-BRIDGE: old solver project → controlled mesh redo
+**Inputs:** original `22_CA2_PRIORITY3_NUMERICAL_VALIDATION.zip` (SHA-256 `f93a0c2c6c25306b86bde308dc012104a78c62ec582e26143535bf4746e2a40e`).
+**Verified:** A3 run manifest has 16 solved/accepted combinations: four geometry families each with BASE_R15, MESH_R10, DOMAIN_25, DOMAIN_30. Embedded baseline AEDT setup is `C_Setup1`, 1GHz, MaxPass15, MinPass2, MinConvPass2, PerError1, PerRefine15, high/direct. Domain variants changed both x and y bounds.
+**Created locally:** `CA2_VALIDATION_BRIDGE_V2.zip` with Python A3 audit, comparison CSV, NOT_RUN candidate manifest, experimental `RUN_AEDT_MESH_REFINEMENT.py` and instructions. This script **has not been tested in AEDT**. It copies existing .aedt models and attempts 25%/35% mesh growth variants, not new physics/geometry.
+**Published GitHub:** `docs/A3_SOURCE_ALIGNED_REDO_2026-11-01.md` details exact baseline and planned checks.
+**No new simulations completed:** mesh convergence, substrate-reference matching and Gauss-law remain open. Next: run script locally, capture errors/profiles/matrices, reject mismatches, then log analysis.
