@@ -29,3 +29,7 @@ Original data: **261** accepted records = 216 original + 36 extra GSGSG developm
 
 ## Decision
 DOE expansion is promising (earlier matched-validation 108→216 improved every observed target), **but improvement is not guaranteed**. Primary decision metric is GSSG mutual held-out MAPE on unchanged test geometry groups, plus per-target adverse changes and uncertainty. No predetermined percentage improvement is claimed.
+
+
+## IMPORTANT GATE (2026-11-01)
+**Do NOT run the 90-case expansion yet.** The project owner raised a valid fidelity issue: if controlled mesh/domain refinement changes extracted C/G labels, final DOE must use a numerically justified and consistent extraction protocol. Read [DOE_SOLVER_FIDELITY_DECISION_GATE.md](DOE_SOLVER_FIDELITY_DECISION_GATE.md) for the required old/new paired bridge, KEEP / CONDITIONAL / REDO decision rules and dataset versioning. The original 261 observations stay immutable while numerical checks are pending.
